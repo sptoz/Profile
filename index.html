@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gaurav | Interactive Profile</title>
+
+<!-- Font Awesome for social icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Loader -->
+<div id="loader">
+  <div class="spinner"></div>
+</div>
+
+<!-- Background canvas -->
+<canvas id="bg"></canvas>
+
+<!-- Parallax decorative shapes -->
+<div class="parallax par-1" data-speed="0.06" aria-hidden="true"></div>
+<div class="parallax par-2" data-speed="0.09" aria-hidden="true"></div>
+<div class="parallax par-3" data-speed="0.14" aria-hidden="true"></div>
+
+<!-- Theme toggle -->
+<button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">
+  <i class="fas fa-moon"></i>
+</button>
+
+<main class="container">
+
+  <!-- HERO -->
+  <section class="card hero reveal">
+    <h1>Gaurav Sharma</h1>
+    <p class="tagline">Student • Learning Coding • Exploring Web</p>
+
+    <div class="buttons hero-buttons">
+      <a class="social-btn" href="#" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+      <a class="social-btn" href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+      <a class="social-btn" href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="card reveal">
+    <h2>About Me</h2>
+    <p>
+      I am in class 11, preparing for JEE and learning programming.
+      I love building interactive web projects and experimenting with animations.
+    </p>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="card reveal">
+    <h2>Skills</h2>
+    <ul class="skills">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>UI/UX Design</li>
+    </ul>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="card reveal">
+    <h2>Connect</h2>
+    <p>Tap an icon above or use these:</p>
+    <div class="buttons">
+      <a class="btn" href="#" aria-label="Telegram link">Telegram</a>
+      <a class="btn" href="#" aria-label="WhatsApp link">WhatsApp</a>
+    </div>
+  </section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
